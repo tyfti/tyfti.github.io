@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tyfti</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="icon" 
+      type="image/x-icon" 
+      href="./static/img/favicon.ico">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="./static/css/main.css" rel="stylesheet" type="text/css">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+    <div id="skrollr-body">
+      <div class="container" id="home-container">
+      
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="./index.html"><img src="./static/img/tyftiLogoLP.png"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="divider"></li>
+                    <li><a href="http://apple.com/" target="_blank" class="navbar-link"><img src="./static/img/appleStoreButton.png"></a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="main">
+<div class="screen">
+    <div class="image_scroll" id="main-background">
+        <div class="heading" id="main-heading" align="center" data-200-top-bottom="opacity: 1"
+                        data-80-top-bottom="opacity: 0"><img src="./static/img/tyftiNameLP.png"></div>
+        <div class="tag" data-200-top-bottom="opacity: 1"
+                        data-80-top-bottom="opacity: 0">
+            Shoot the breeze again.
+            <div class="button"><a href="http://apple.com"><img src="./static/img/downloadButtonLP.png"></a></div>
+        </div>
+        <div class="scroll" data-200-top-bottom="opacity: 1"
+                        data-80-top-bottom="opacity: 0"><img src="./static/img/scrollDownLandingPage.png"></div>
+    </div>
+</div>
+<div id="screen2">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2">
+            <div class="centered">
+            Be Spontaneuous.<br />Invite your friends to something quick and fun.
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2">
+            <div class="centered">
+            Find out who's available to hang out when you're free...
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2">
+            <div class="centered">
+            And see who wants to hang out with you when they are free
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+            <h2>Thank you for the invite!</h2>
+            <div class="main-text">Busy people are busy for a reason. Tyfti helps simplify the process of going out with friends, wherever the event may be. Plus, we can give you an accurate prediction of who's gonna attend, and who wouldn't want that?</div>
+        </div>
+        <div class="col-md-6">
+            <div id="iPhone">
+                <img src="./static/img/iPhone.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+      </div>
+      </div>
+      <script type="text/javascript" src="./static/js/skrollr.js"></script>
+      <script type="text/javascript">
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+            skrollr.init({
+                forceHeight: false
+            });
+        } else {
+            var bg = jQuery(".background");
+            jQuery(window).resize("resizeBackground");
+            function resizeBackground() {
+                bg.height(jQuery(window).height() + 60);
+            }
+            resizeBackground();
+        }
+      </script>
+    </body>
+</html>
